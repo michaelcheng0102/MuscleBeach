@@ -272,14 +272,14 @@ a:after {
 
 #headerwrap {
 	background: url(../img/header_bg.jpg) no-repeat center top;
-	margin-top: -50px;
+	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -301,9 +301,19 @@ a:after {
 	text-shadow: 2px 2px 2px #000;
 }
 
+#headerwrap h2 {
+	color:#ffffff;
+    margin-top: -10px;
+	padding-bottom: 0px;
+	letter-spacing: 8px;
+	font-size: 60px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000;
+}
+
 #headerwrap p {
 	color:#ffffff;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 400;
 	text-align: center;
 	line-height: 40px;
@@ -393,7 +403,7 @@ a:after {
     background-size: cover;
 
     background-attachment: relative;
-    
+
     text-align: center;
 }
 
@@ -408,7 +418,9 @@ a:after {
 	font-size: 25px;
 }
 
-
+.textcol p {
+    font-size: 25px;
+}
 /* Section Dividers Backgrounds */
 
 .divider1 {
@@ -432,6 +444,9 @@ a:after {
 	background-image: url('../img/bg/divider6.jpg')
 }
 
+.divider7 {
+	background-image: url('../img/bg/divider7.jpg');
+}
 
 
 /* ==========================================================================
@@ -516,7 +531,7 @@ a:after {
 	font-weight: 700;
 	text-align: left;
 	letter-spacing: 2px;
-	
+
 }
 
 .grid figcaption a {
@@ -591,7 +606,7 @@ a:after {
 	background: #2b2b2b;
 	padding-right: 0px;
 	padding-left: 0px;
-	
+
 }
 
 .blog-bg h4 {
