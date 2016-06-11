@@ -1,22 +1,21 @@
 package info.androidhive.slidingmenu;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import info.androidhive.slidingmenu.adapter.FragmentChangeListener;
-
 public class HomeFragment extends Fragment {
 	
-	Button testButton;
-    public HomeFragment(){}
-	
-	@Override
+	public HomeFragment(){}
+    private Button testButton;
+
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
@@ -24,7 +23,6 @@ public class HomeFragment extends Fragment {
          
         return rootView;
     }
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         testButton = (Button) view.findViewById(R.id.testButton);
@@ -32,9 +30,8 @@ public class HomeFragment extends Fragment {
                                            @Override
                                            public void onClick(View view) {
                                                Fragment fr = new FindPeopleFragment();
-
                                                FragmentManager fm = getFragmentManager();
-                                               android.support.v4.app.FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                                               FragmentTransaction fragmentTransaction = fm.beginTransaction();
                                                fragmentTransaction.replace(R.id.frame_container, fr);
                                                fragmentTransaction.commit();
                                            }

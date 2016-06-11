@@ -1,15 +1,16 @@
 package info.androidhive.slidingmenu;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class CommunityFragment extends Fragment {
 	
 	public CommunityFragment(){}
-	
+
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -18,4 +19,5 @@ public class CommunityFragment extends Fragment {
          
         return rootView;
     }
+
 }
