@@ -3,18 +3,18 @@
     <!-- From: file:/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
-        <item>@drawable/ic_people</item>
-        <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_communities</item>
+        <item>@drawable/home</item>
+        <item>@drawable/calendar</item>
+        <item>@drawable/friends</item>
+        <item>@drawable/notification</item>
         <item>@drawable/ic_pages</item>
         <item>@drawable/ic_whats_hot</item>
     </array>
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>Find People</item>
-        <item>Photos</item>
-        <item>Communities</item>
+        <item>Calendar</item>
+        <item>Friends</item>
+        <item>Notification</item>
         <item>Pages</item>
         <item>What\'s Hot</item>
     </string-array>
@@ -26,8 +26,6 @@
     <color name="list_background_pressed">#992416</color>
     <color name="list_divider">#272727</color>
     <color name="list_item_title">#fff</color>
-    <!-- From: file:/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <color name="white">#FFFFFF</color>
     <!-- From: file:/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
@@ -37,6 +35,7 @@
     <eat-comment/>
     <string name="Cancel">Cancel</string>
     <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
     <string name="OK">OK</string>
     <string name="SignUp">Sign Up</string>
     <string name="action_settings">Settings</string>
@@ -44,6 +43,7 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="drawer_open">Slider Menu Opened</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- From: file:/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/src/main/res/values/styles.xml -->

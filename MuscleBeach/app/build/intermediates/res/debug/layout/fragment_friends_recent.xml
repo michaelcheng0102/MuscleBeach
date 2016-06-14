@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan">
+
+    <TextView
+        android:id="@+id/friendsRecordName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Michael Cheng"
+        android:textSize="36dp"
+        android:layout_alignBottom="@+id/friendsRecordImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendsRecordImage"
+        android:src="@drawable/fat"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/friendMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Send" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/emojiImageButton"
+            android:src="@drawable/emoji"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/src/main/res/layout/fragment_friends_recent.xml -->

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/pictureRecordTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016 6 13"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pictureRecordImageView"
+        android:src="@drawable/arm_belly"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/rightArmButton"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/pictureRecordTextLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/leftArmButton"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/rightArmButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:id="@+id/bellyButton"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="235dp"
+        android:layout_toStartOf="@+id/leftArmButton"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:id="@+id/legButton"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/bellyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>

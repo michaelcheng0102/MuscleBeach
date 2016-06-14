@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.androidhive.MuscleBeach"
+    package="com.hcidmusclebeach.MuscleBeach"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
 
     <android:uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -42,8 +42,10 @@
         </activity>
         <activity
             android:name=".SignUpLoginActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
+
     </application>
 
 </manifest>

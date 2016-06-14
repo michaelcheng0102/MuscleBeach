@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/michael/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jar="/Users/michael/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-39a050ac97a7ce96b78c835833af467c44482de0.jar" />
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-66901442bcff3fd44d59be920c3dff7f9a769301.jar" />
+    </item>
+    <item
+        jar="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/pre-dexed/debug/classes-770d989b8d58bc5152556df47d49168eb9f82040.jar" />
+    </item>
+    <item
+        jar="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/michael/Dropbox/HCI/MuscleBeach/MuscleBeach/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-16dd528a090a2e876131f98e6eaa41caa913b2c0.jar" />
     </item>
 
 </items>
