@@ -18,8 +18,10 @@ public class PictureRecordFragment extends Fragment {
 
     private TextView dateLabel;
     private ImageView recordImage;
-
-    public PictureRecordFragment(){}
+    private Button rightArmButton;
+    private Button leftArmButton;
+    private Button bellyButton;
+    private Button legButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +33,11 @@ public class PictureRecordFragment extends Fragment {
     }
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
+        rightArmButton = (Button) view.findViewById(R.id.rightArmButton);
+        leftArmButton = (Button) view.findViewById(R.id.leftArmButton);
+        bellyButton = (Button) view.findViewById(R.id.bellyButton);
+        legButton = (Button) view.findViewById(R.id.legButton);
+
         int year, month, date;
         SharedPreferences prefs = getActivity().getSharedPreferences("DATE", Context.MODE_PRIVATE);
         year = prefs.getInt("year", 2016);
@@ -55,8 +62,67 @@ public class PictureRecordFragment extends Fragment {
                 Integer.toString(month+1)+ " " +
                 Integer.toString(date)
         );
-        
 
+        leftArmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor
+                        = getActivity().getSharedPreferences("PressImage", Context.MODE_PRIVATE).edit();
+                editor.putInt("part", 0);
+                editor.commit();
+                Fragment fr = new WrokoutChartFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.replace(R.id.frame_container, fr);
+                fragmentTransaction.commit();
+            }
+        });
+        rightArmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor
+                        = getActivity().getSharedPreferences("PressImage", Context.MODE_PRIVATE).edit();
+                editor.putInt("part", 0);
+                editor.commit();
+                Fragment fr = new WrokoutChartFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.replace(R.id.frame_container, fr);
+                fragmentTransaction.commit();
+            }
+        });
+        bellyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor
+                        = getActivity().getSharedPreferences("PressImage", Context.MODE_PRIVATE).edit();
+                editor.putInt("part", 1);
+                editor.commit();
+                Fragment fr = new WrokoutChartFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.replace(R.id.frame_container, fr);
+                fragmentTransaction.commit();
+            }
+        });
+        legButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor
+                        = getActivity().getSharedPreferences("PressImage", Context.MODE_PRIVATE).edit();
+                editor.putInt("part", 2);
+                editor.commit();
+                Fragment fr = new WrokoutChartFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.replace(R.id.frame_container, fr);
+                fragmentTransaction.commit();
+            }
+        });
 
 
 

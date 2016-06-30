@@ -11,16 +11,7 @@
         android:textSize="36dp"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pictureRecordImageView"
-        android:src="@drawable/arm_belly"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:id="@+id/rightArmButton"
@@ -31,7 +22,6 @@
         android:layout_marginStart="48dp" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:id="@+id/leftArmButton"
@@ -41,7 +31,6 @@
         android:layout_marginEnd="56dp" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="90dp"
         android:layout_height="40dp"
         android:id="@+id/bellyButton"
@@ -51,7 +40,6 @@
         />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="150dp"
         android:layout_height="90dp"
         android:id="@+id/legButton"
@@ -59,6 +47,14 @@
         android:layout_below="@+id/bellyButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pictureRecordImageView"
+        android:src="@drawable/arm_belly"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

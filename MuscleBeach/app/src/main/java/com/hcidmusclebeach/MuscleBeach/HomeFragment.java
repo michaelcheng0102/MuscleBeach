@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
             alertDialog.setTitle("Some tips!!!");
 
             // Setting Dialog Message
-            alertDialog.setMessage("This is a muscle man. It will grow as you ");
+            alertDialog.setMessage("This is a muscle man. It will grow as you work out!!!");
 
             // Setting Icon to Dialog
             alertDialog.setIcon(R.drawable.warning);

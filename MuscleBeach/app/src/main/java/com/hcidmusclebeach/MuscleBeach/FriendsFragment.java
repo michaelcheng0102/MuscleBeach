@@ -20,7 +20,8 @@ import com.hcidmusclebeach.MuscleBeach.adapter.CustomList;
 public class FriendsFragment extends Fragment {
 	
 	private ListView friendList;
-    private final String[] names = new String[] { "Michael Cheng",
+    private final String[] names = new String[] {
+            "Michael Cheng",
             "Mark Yang",
             "Sophia Hsieh",
             "Calvin Chen",
